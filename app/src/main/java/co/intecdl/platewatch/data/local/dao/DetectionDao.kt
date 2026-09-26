@@ -26,6 +26,42 @@ interface DetectionDao {
     @Query("SELECT * FROM detections WHERE matched = :matched ORDER BY detectedAtUtcMillis DESC")
     fun observeByMatch(matched: Boolean): Flow<List<DetectionEntity>>
 
+    @Query(
+        """
+        SELECT * FROM detections
+        WHERE (:query = '' OR normalizedPlate LIKE '%' || :query || '%')
+          AND (:matchedFilter IS NULL OR matched = :matchedFilter)
+          AND (:startUtcMillis IS NULL OR detectedAtUtcMillis >= :startUtcMillis)
+          AND (:endUtcMillis IS NULL OR detectedAtUtcMillis < :endUtcMillis)
+        ORDER BY detectedAtUtcMillis DESC
+        """
+    )
+    fun observeFiltered(
+        query: String,
+        matchedFilter: Boolean?,
+        startUtcMillis: Long?,
+        endUtcMillis: Long?
+    ): Flow<List<DetectionEntity>>
+
+    @Query(
+        """
+        SELECT COUNT(*) FROM detections
+        WHERE (:startUtcMillis IS NULL OR detectedAtUtcMillis >= :startUtcMillis)
+          AND (:endUtcMillis IS NULL OR detectedAtUtcMillis < :endUtcMillis)
+        """
+    )
+    fun observeCount(startUtcMillis: Long?, endUtcMillis: Long?): Flow<Long>
+
+    @Query(
+        """
+        SELECT COUNT(*) FROM detections
+        WHERE matched = 1
+          AND (:startUtcMillis IS NULL OR detectedAtUtcMillis >= :startUtcMillis)
+          AND (:endUtcMillis IS NULL OR detectedAtUtcMillis < :endUtcMillis)
+        """
+    )
+    fun observeMatchedCount(startUtcMillis: Long?, endUtcMillis: Long?): Flow<Long>
+
     @Query("DELETE FROM detections WHERE id = :id")
     suspend fun deleteById(id: Long)
 
