@@ -1,4 +1,4 @@
-# Bloque 04
-- [x] Contratos de ubicacion y evidencia.
-- [x] Almacenamiento original y estampado.
-- [ ] Proveedor Fused Location y validacion fisica.
+# Bloque 05
+- [x] Canal y notificacion local.
+- [x] Cooldown y decisiones de modo.
+- [ ] Foreground service y prueba real en dispositivo.
