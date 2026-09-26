@@ -1,0 +1,1 @@
+Coloque aqui los modelos locales aprobados. No versionar modelos sin revisar licencia, tamano, formato de entrada y precision para las placas objetivo.
