@@ -1,4 +1,4 @@
-# Bloque 03
-- [x] Contratos, orquestador, metricas y estado no disponible.
-- [ ] Modelos detector y OCR reales.
-- [ ] Calibracion en Galaxy A24.
+# Bloque 04
+- [x] Contratos de ubicacion y evidencia.
+- [x] Almacenamiento original y estampado.
+- [ ] Proveedor Fused Location y validacion fisica.
