@@ -23,6 +23,7 @@ dependencies {
     implementation(lib.room.ktx)
     implementation(libs.lifecycle.viewmodel.compose)
     implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation(libs.androidx.navigation.compose)
 
     ksp(libs.room.compiler)
 

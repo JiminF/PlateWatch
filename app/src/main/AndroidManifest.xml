@@ -7,7 +7,16 @@
  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
  <uses-permission android:name="android.permission.VIBRATE"/>
+ <uses-feature
+android:name="android.hardware.usb.host"
+android:required="false" />
+<uses-feature
+android:name="android.hardware.camera.any"
+android:required="true" />
  <application android:allowBackup="false" android:label="Plate Watch" android:theme="@style/Theme.PlateWatch" android:usesCleartextTraffic="false">
-  <activity android:name=".MainActivity" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+  <activity android:name=".MainActivity" android:exported="true">
+  <intent-filter><action android:name="android.intent.action.MAIN"/>
+  <category android:name="android.intent.category.LAUNCHER"/>
+  </intent-filter></activity>
  </application>
 </manifest>
