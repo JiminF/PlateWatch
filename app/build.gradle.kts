@@ -21,6 +21,7 @@ dependencies {
     implementation(libs.coroutines.android); debugImplementation(libs.compose.tooling); testImplementation(libs.junit)
     implementation(libs.room.runtime)
     implementation(lib.room.ktx)
+    implementation(libs.lifecycle.viewmodel.compose)
 
     ksp(libs.room.compiler)
 
