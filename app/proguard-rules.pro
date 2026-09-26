@@ -1,1 +1,1 @@
-# Reglas especificas se agregaran al integrar Room, ONNX/TFLite y AUSBC.
+# Reglas adicionales se incorporaran con Room, AUSBC y el runtime ALPR.

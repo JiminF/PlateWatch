@@ -1,22 +1,19 @@
 # Progreso de PlateWatch
+## 26/09/2026 - Etapa 1B
+- [x] Proyecto base Kotlin, Compose y Material 3.
+- [x] Enumeracion dinamica Camera2.
+- [x] Camaras logicas y IDs fisicos expuestos.
+- [x] Seleccion funcional de camara interna.
+- [x] Preview real CameraX.
+- [x] ImageAnalysis con STRATEGY_KEEP_ONLY_LATEST.
+- [x] Contador de frames, resolucion, FPS y estado.
+- [x] Cierre de ImageProxy y liberacion de recursos.
+- [x] PlateNormalizer y DetectionStabilizer con pruebas.
+- [ ] Validar compilacion en Android Studio y Galaxy A24.
+- [ ] Integrar USB UVC real.
+- [ ] Integrar Room.
+- [ ] Integrar detector y OCR locales reales.
+- [ ] GPS, evidencia, alertas y exportacion.
 
-## 26/09/2026 - Etapa 1A
-
-- [x] Proyecto Android base.
-- [x] Kotlin, Compose y Material 3.
-- [x] Manifest con permisos iniciales.
-- [x] Contratos desacoplados de camara y ALPR.
-- [x] Enumeracion real de camaras internas con Camera2.
-- [x] Identificacion de camaras logicas y IDs fisicos expuestos.
-- [x] Interfaz inicial de seleccion de camara.
-- [x] Normalizacion de placas.
-- [x] Estabilizacion temporal y cooldown.
-- [x] Pruebas unitarias iniciales.
-- [ ] Preview real con CameraX.
-- [ ] ImageAnalysis con estrategia KEEP_ONLY_LATEST.
-- [ ] Adaptador USB UVC real.
-- [ ] Room, modelos ALPR, GPS, evidencia y alertas.
-
-## Notas
-
-No se han agregado datos ni reconocimiento simulados. La aplicacion no declara disponible el ALPR hasta integrar un modelo local real.
+## Nota de integridad
+No se generan placas, ubicaciones ni metricas falsas. El motor ALPR permanece no disponible hasta integrar modelos locales reales.
