@@ -1,3 +1,3 @@
-# Bloque 06
-- [x] Dashboard y rutas de datos.
-- [ ] Ruta vigilancia, configuracion y diagnostico completas.
+# Bloque 07
+- [x] CSV, borrado coordinado y logger restringible.
+- [ ] UI SAF, importacion watchlist y limpieza de resumen observado.
