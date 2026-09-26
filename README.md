@@ -1,5 +1,3 @@
-# PlateWatch Etapa 2B
+# PlateWatch Etapa 2C
 
-Actualizacion incremental para gestionar la lista local de placas vigiladas con Room, ViewModel, Flow y Compose.
-
-Incluye agregar, editar, activar, desactivar, buscar y eliminar. No precarga datos simulados.
+Actualizacion incremental para consultar placas observadas, historial individual y detalle de cada deteccion almacenada en Room.

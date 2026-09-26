@@ -1,22 +1,23 @@
 # Progreso PlateWatch
 
-## Etapa 2B - Placas vigiladas
+## Etapa 2C - Placas observadas e historial
 
-- [x] Repositorio especifico de placas vigiladas.
-- [x] Alta con normalizacion previa.
-- [x] Prevencion de duplicados.
-- [x] Edicion de placa, etiqueta, notas y estado.
-- [x] Activacion y desactivacion inmediata.
-- [x] Eliminacion con confirmacion.
-- [x] Busqueda reactiva con debounce.
-- [x] Pantalla Compose conectada a Room mediante Flow.
-- [x] ViewModel y estado de UI.
-- [x] Mensajes de guardado, duplicado, validacion y eliminacion.
-- [ ] Integrar ruta definitiva en dashboard.
-- [ ] Pruebas instrumentadas del DAO.
-- [ ] Importacion y exportacion de watchlist.
-- [ ] Etapa 2C: placas observadas e historial.
+- [x] Lista reactiva de placas observadas.
+- [x] Busqueda por placa normalizada.
+- [x] Resumen de cantidad, primera y ultima observacion.
+- [x] Historial individual ordenado de reciente a antiguo.
+- [x] Detalle de deteccion.
+- [x] Estado coincidencia o no coincidente.
+- [x] Confianza y camara de origen.
+- [x] GPS real o mensaje no disponible.
+- [x] Rutas de imagen original y estampada.
+- [x] Fechas UTC convertidas a zona local del dispositivo.
+- [x] ViewModel, repositorio y Flow.
+- [ ] Ruta definitiva en dashboard.
+- [ ] Visualizador de evidencia fotografica.
+- [ ] Filtros avanzados por fecha y coincidencia.
+- [ ] Etapa 2D: pantalla global de detecciones.
 
 ## Integridad
 
-La interfaz solo muestra filas reales de Room. No incluye listas estaticas ni placas de demostracion.
+No se precargan observaciones. La pantalla vacia es el comportamiento correcto mientras no existan detecciones reales.
