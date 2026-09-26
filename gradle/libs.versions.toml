@@ -8,6 +8,8 @@ composeBom="2025.06.01"
 camera="1.4.2"
 coroutines="1.10.2"
 junit="4.13.2"
+room = "2.8.5"
+ksp = "2.1.20-2.0.1"
 [libraries]
 core-ktx={module="androidx.core:core-ktx",version.ref="core"}
 activity-compose={module="androidx.activity:activity-compose",version.ref="activity"}
@@ -23,7 +25,28 @@ camera-lifecycle={module="androidx.camera:camera-lifecycle",version.ref="camera"
 camera-view={module="androidx.camera:camera-view",version.ref="camera"}
 coroutines-android={module="org.jetbrains.kotlinx:kotlinx-coroutines-android",version.ref="coroutines"}
 junit={module="junit:junit",version.ref="junit"}
+room-runtime = {
+    module = "androidx.room:room-runtime",
+    version.ref = "room"
+}
+room-ktx = {
+    module = "androidx.room:room:ktx",
+    version.ref = "room"
+}
+room-compiler = {
+    module = "androidx.room:room-compiler",
+    version.ref = "room"
+}
+room-testing = {
+    module = "androidx.room:room-testing",
+    version.ref = "room"
+}
 [plugins]
 android-application={id="com.android.application",version.ref="agp"}
 kotlin-android={id="org.jetbrains.kotlin.android",version.ref="kotlin"}
 kotlin-compose={id="org.jetbrains.kotlin.plugin.compose",version.ref="kotlin"}
+ksp = {
+    id = "com.google.devtools.ksp",
+    version.ref = "ksp"
+}
+
