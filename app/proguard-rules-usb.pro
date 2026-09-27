@@ -1,0 +1,3 @@
+-keep class com.jiangdg.ausbc.** { *; }
+-keep class com.serenegiant.usb.** { *; }
+-keepclasseswithmembernames class * { native <methods>; }

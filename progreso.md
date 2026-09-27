@@ -1,3 +1,4 @@
-# Bloque 07
-- [x] CSV, borrado coordinado y logger restringible.
-- [ ] UI SAF, importacion watchlist y limpieza de resumen observado.
+# Bloque 08
+- [x] Plan de integracion y release.
+- [ ] Backend AUSBC validado fisicamente.
+- [ ] Build release firmado por el propietario.

@@ -1,0 +1,13 @@
+# Lista release
+- Compilacion debug y release.
+- Pruebas offline con radios desactivados.
+- CameraX interna.
+- USB OTG y alimentacion.
+- Detector y OCR reales.
+- Room y migraciones.
+- GPS disponible/no disponible.
+- Evidencia original/estampada.
+- Notificacion y cooldown.
+- Exportacion y borrado.
+- R8 sin fallos.
+- Sin datos sensibles en Logcat.
