@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import co.intecdl.platewatch.data.local.dao.*
 import co.intecdl.platewatch.data.local.entity.*
+import co.intecdl.platewatch.data.local.dao.LocalBackendDao
 
 @Database(
     entities = [WatchedPlateEntity::class, ObservedPlateEntity::class, DetectionEntity::class, AppSettingsEntity::class],
@@ -19,6 +20,7 @@ abstract class PlateWatchDatabase : RoomDatabase() {
     abstract fun observedPlateDao(): ObservedPlateDao
     abstract fun detectionDao(): DetectionDao
     abstract fun appSettingsDao(): AppSettingsDao
+    abstract fun localBackendDao(): LocalBackendDao
 
     companion object {
         @Volatile private var instance: PlateWatchDatabase? = null

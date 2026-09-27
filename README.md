@@ -1,3 +1,3 @@
-# PlateWatch Etapa 2D
+# PlateWatch UI integrada
 
-Pantalla global de detecciones con busqueda, filtros por coincidencia y fecha, resumen, detalle y eliminacion controlada.
+Interfaz moderna de Android que conecta el frontend Compose con el backend Room local y reúne la selección de cámaras internas y USB.
